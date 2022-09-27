@@ -5,7 +5,7 @@ public class Main {
 
         System.out.println(sum(5,10));
         System.out.println(sumString(3,5));
-        System.out.println(getSum());
+        printSum();
     }
     public static int sum(int value1, int value2) {
         return value1 + value2;
@@ -14,7 +14,7 @@ public class Main {
         int result = value1 + value2;
         return "Summe: " + result;
     }
-    public static int getSum() {
+    public static void printSum() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte erste Zahl eingeben!");
@@ -22,6 +22,6 @@ public class Main {
         System.out.println("Bitte zweite Zahl eingeben!");
         int value2 = scanner.nextInt();
 
-        return sum(value1, value2);
+        System.out.println(sum(value1, value2));
     }
 }
