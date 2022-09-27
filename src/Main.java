@@ -5,6 +5,9 @@ public class Main {
 
         System.out.println(sum(5,10));
         System.out.println(sumString(3,5));
+        String testString = "this is fancy shit";
+        System.out.println(checkString(testString));
+        System.out.println("Länge > 20: " + checkLength(testString) + "\n" + " und enthält \"fancy\": " + containsFancy(testString));
         printSum();
     }
     public static int sum(int value1, int value2) {
@@ -23,5 +26,15 @@ public class Main {
         int value2 = scanner.nextInt();
 
         System.out.println(sum(value1, value2));
+    }
+
+    public static boolean checkString(String input){
+        return input.length() > 20 || input.contains("fancy");
+    }
+    public static boolean checkLength(String input) {
+        return input.length() > 20;
+    }
+    public static boolean containsFancy(String input) {
+        return input.contains("fancy");
     }
 }
