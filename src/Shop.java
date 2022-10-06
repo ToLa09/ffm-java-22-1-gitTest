@@ -16,4 +16,7 @@ public class Shop {
         ));
         return;
     }
+    public boolean isOpen() {
+        return true;
+    }
 }
