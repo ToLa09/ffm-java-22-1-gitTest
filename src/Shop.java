@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Shop {
 
     private int clientCapacity;
@@ -9,6 +12,8 @@ public class Shop {
     }
 
     public void sellGoods() {
+        List<Buyable> buyableGoods = new ArrayList<>(List.of(
+        ));
         return;
     }
 }
