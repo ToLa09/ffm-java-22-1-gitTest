@@ -6,6 +6,8 @@ public class Main {
         System.out.println(sum(5,10));
         System.out.println(sumString(3,5));
 
+        System.out.println(customerInShop(1,"rot"));
+
         System.out.println("Bitte zu überprüfenden String eingeben:");
         Scanner scanner = new Scanner(System.in);
         String testString = scanner.nextLine();
@@ -39,5 +41,31 @@ public class Main {
     //Beide Überprüfungen eines Strings in einer Methode
     public static boolean checkString(String input){
         return input.length() > 20 || input.contains("fancy");
+    }
+    public static String checkPeopleInShop(int numberOfPeople) {
+        if (numberOfPeople >= 30) {
+            return "Too many people";
+        } else
+            return "limit not exceeded";
+    }
+    public static String customerInShop (int customers, String alertLevel) {
+        int limit;
+        switch (alertLevel) {
+            case "rot":
+                limit = 0;
+                break;
+            case "gelb":
+                limit = 30;
+                break;
+            case "grün":
+                limit = 60;
+                break;
+            default:
+                return "Shop closed.";
+        }
+        if (customers >= limit) {
+            return "Too many customers";
+        } else
+            return "limit not exceeded";
     }
 }
