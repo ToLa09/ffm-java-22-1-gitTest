@@ -10,7 +10,7 @@ public class Shop {
         this.clientCapacity = clientCapacity;
         this.name = name;
     }
-
+    //Waren verkaufen
     public void sellGoods() {
         List<Buyable> buyableGoods = new ArrayList<>(List.of(
         ));
