@@ -7,4 +7,8 @@ public class Shop {
         this.clientCapacity = clientCapacity;
         this.name = name;
     }
+
+    public void sellGoods() {
+        return;
+    }
 }
