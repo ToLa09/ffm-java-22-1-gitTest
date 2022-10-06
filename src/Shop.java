@@ -22,4 +22,7 @@ public class Shop {
     public void newMethod() {
 
     }
+    public void extraMethod() {
+
+    }
 }
