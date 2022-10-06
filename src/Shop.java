@@ -1,3 +1,7 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
 public class Shop {
 
     private int clientCapacity;
@@ -8,7 +12,13 @@ public class Shop {
         this.name = name;
     }
 
+    //Waren verkaufen
     public void sellGoods() {
+        List<Buyable> buyableGoods = new ArrayList<>(List.of(
+        ));
         return;
+    }
+    public boolean isOpen() {
+        return true;
     }
 }
