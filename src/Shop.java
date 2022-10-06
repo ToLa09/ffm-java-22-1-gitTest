@@ -19,4 +19,7 @@ public class Shop {
     public boolean isOpen() {
         return true;
     }
+    public void newMethod() {
+
+    }
 }
